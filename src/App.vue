@@ -7,7 +7,7 @@
   const remaining = ref(5)
   const isLocked = ref(true)
   import Hello from './components/Hello.vue'
-
+  import TodoForm from './components/TodoForm.vue'
 </script>
 
 <template>
@@ -32,6 +32,7 @@
 
   <main>
     <Hello></Hello>
+    <TodoForm></TodoForm>
   </main>
 </template>
 
