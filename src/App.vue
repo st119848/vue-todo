@@ -8,6 +8,7 @@
   const isLocked = ref(true)
   import Hello from './components/Hello.vue'
   import TodoForm from './components/TodoForm.vue'
+  import ComputedTodo from './components/ComputedTodo.vue'
 </script>
 
 <template>
@@ -33,6 +34,7 @@
   <main>
     <Hello></Hello>
     <TodoForm></TodoForm>
+    <ComputedTodo></ComputedTodo>
   </main>
 </template>
 
