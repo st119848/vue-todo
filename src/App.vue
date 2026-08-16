@@ -5,7 +5,8 @@
   const title = ref('Vue.js Course')
   const owner = ref('John')
   const remaining = ref(5)
-  const isLocked = ref(false)
+  const isLocked = ref(true)
+  import Hello from './components/Hello.vue'
 
 </script>
 
@@ -14,17 +15,23 @@
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <h1 >
-        {{ title }} {{ count }}
+        Title {{ title }} 
+        
     </h1>
+    <h2>
+        Owner  {{ owner }}
+    </h2>
     <div >
-        {{ subTitle }}
-        <div>
-          <img :src="imgUrl">
-        </div>
+        Remaining : {{ remaining }}
+        <button 
+           :disabled="isLocked"
+           :aria-disabled="isLocked"
+        >Add</button>
     </div>
   </header>
 
   <main>
+    <Hello></Hello>
   </main>
 </template>
 
