@@ -2,12 +2,6 @@
   const title = "Todo App"
   const subTitle = "Hello World"
   const imgUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9UjitrpsLDBn81E7T6MBLb9JSMOr5lFtBKtU6dScSA&s=10"
-  import {ref} from 'vue'
-  import Todo from './components/Todo.vue'
-  const count = ref(0)
-  function inc(){
-    count.value +=1
-  }
 </script>
 
 <template>
@@ -20,14 +14,12 @@
     <div >
         {{ subTitle }}
         <div>
-          <img width="50" :src="imgUrl">
+          <img :src="imgUrl">
         </div>
-        <button @click="inc">Add</button>
     </div>
   </header>
-  
+
   <main>
-    <Todo></Todo>
   </main>
 </template>
 
