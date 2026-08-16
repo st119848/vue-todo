@@ -1,7 +1,12 @@
 <script setup>
-  const title = "Todo App"
+  import {ref} from 'vue'
   const subTitle = "Hello World"
   const imgUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9UjitrpsLDBn81E7T6MBLb9JSMOr5lFtBKtU6dScSA&s=10"
+  const title = ref('Vue.js Course')
+  const owner = ref('John')
+  const remaining = ref(5)
+  const isLocked = ref(false)
+
 </script>
 
 <template>
