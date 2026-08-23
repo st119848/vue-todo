@@ -9,10 +9,12 @@
   import Hello from './components/Hello.vue'
   import TodoForm from './components/TodoForm.vue'
   import ComputedTodo from './components/ComputedTodo.vue'
+  import Header from './components/Header.vue'
 </script>
 
 <template>
   <header>
+    <Header></Header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <h1 >
